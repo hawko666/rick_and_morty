@@ -31,6 +31,7 @@ body {
   border-radius: 5px;
   /* z-index: 100; */
   position: relative;
+  margin-bottom: 20px;
 }
 
 .num {
@@ -39,7 +40,7 @@ body {
   bottom: 0;
   color: #ff9900;
   position: absolute;
-  line-height: 120px;
+  line-height: 170px;
   opacity: 1;
 }
 
