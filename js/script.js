@@ -12,8 +12,23 @@ function customApi() {
             showData(data.results);
         }
 
-    }
+    };
+
+    xrHp.onprogress = function (event) {
+        if (event.lengthComputable) {
+            console.log(`Received ${event.loaded} of ${event.total} bytes`);
+        } else {
+            console.log(`Received ${event.loaded} bytes`);
+        }
+    };
+
+    xrHp.onerror = function () {
+        alert("Network Error : Failed to Connect to api");
+    };
 }
+
+
+
 var wrap = document.querySelector('.wrapper')
 function showData(a) {
     for (let i = 0; i < a.length; i++) {
